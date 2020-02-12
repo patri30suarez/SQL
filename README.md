@@ -117,7 +117,7 @@ Ten que ir debajo de GROUP BY
 
 Para limitar el numero de soluciones
 
-#EJEMPLOS
+# EJEMPLOS
 
     1. Some countries have populations more than three times that of any theirs neighbours (in same continent). Give the countries and the continent.
 
