@@ -14,6 +14,8 @@ Hay que respetar los espacios
 
 Para poder usar una coma es \’
 
+Los comentarios son con --
+
 ## SELECT
 
 ### REPLACE (‘lo que se quiere cambiar’, ‘la parte que se cambia’, ’por lo que se cambia’ )
