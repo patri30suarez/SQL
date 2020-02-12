@@ -119,7 +119,7 @@ Para limitar el numero de soluciones
 
 # EJEMPLOS
 
-    1. Some countries have populations more than three times that of any theirs neighbours (in same continent). Give the countries and the continent.
+## 1. Some countries have populations more than three times that of any theirs neighbours (in same continent). Give the countries and the continent.
 
 SELECT name, continent
 FROM  world AS outerworld
@@ -130,7 +130,7 @@ WHERE outerworld.continent=innerworld.continent
 AND outerworld.name <> innerworld.name
 AND population IS NOT NULL);
 
-    2. List the films where ‘Harrison Ford’ has appeared – but not in starring role (note: the ord field of casting gives the position of the actor if ord=1 then this actor is in starring role)
+## 2. List the films where ‘Harrison Ford’ has appeared – but not in starring role (note: the ord field of casting gives the position of the actor if ord=1 then this actor is in starring role)
 
 SELECT movie.title
 FROM actor JOIN movie ON movie.id=casting.movieid
