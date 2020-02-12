@@ -41,8 +41,6 @@ Suma
 ### COALESCE (atributo, valor por defecto)
 
 
-
-
 ## FROM
 
 ### JOIN tabla 2 ON clave principal=clave ajena.
@@ -150,11 +148,11 @@ WHERE actor.name=’Harrison Ford’
 
  AND ord <> 1;
 
-< Que erro dara si cambiamos FROM actor y eliminamos JOIN movie ON movie.id=casting.movieid
+- Que erro dara si cambiamos FROM actor y eliminamos JOIN movie ON movie.id=casting.movieid
     
 Non recoñece movie.title
 
-< Fai a mesma consulta sin usar ON 
+- Fai a mesma consulta sin usar ON 
 
 SELECT movie.title
 
@@ -170,7 +168,7 @@ WHERE actor.name=’Harrison Ford’
 		
   AND actor.id=casting.actorid;
 
-< Fai a mesma consulta con solo un join 
+- Fai a mesma consulta con solo un join 
 
 SELECT movie.title
 
@@ -186,7 +184,7 @@ WHERE casting.actorid =
 
  WHERE actor.name=’Harrison Ford’);
 
-< Esta consulta se ejecuta
+- Esta consulta se ejecuta
 
 SELECT movie.yr
 	
@@ -196,6 +194,6 @@ FROM movie
 
 Non porque o SELECT pide todos los años y a la vez COUNT es un reductor, para solucionar necesitaremos un GROUP BY 
 
-< Donde se coloca COUNT (movie.title)>2
+- Donde se coloca COUNT (movie.title)>2
 
 Al ser un predicado sería en WHERE pero como también tiene un reductor se coloca en HAVING 
